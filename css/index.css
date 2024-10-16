@@ -24,6 +24,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: 0;
+  color: inherit;
+}
 
 .container {
   max-width: 1210px;
