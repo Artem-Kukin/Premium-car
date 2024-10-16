@@ -1,0 +1,41 @@
+.sticker-blue,
+.tag-gray {
+  font-family: var(--font-family-r);
+  font-size: 12px;
+  padding: 4px 12px;
+  width: fit-content;
+  height: 22px;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: flex-end;
+
+  cursor: pointer;
+  transition: all var(--animation);
+}
+
+.sticker-blue {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+.sticker-blue:hover,
+.sticker-blue:focus {
+  scale: var(--scale-active);
+}
+
+.tag-gray {
+  color: var(--color-black);
+  background-color: var(--color-gray-light);
+}
+
+.tag-gray:hover,
+.tag-gray:focus {
+  color: var(--color-white);
+  background-color: var(--color-gray);
+  scale: var(--scale-active);
+}
+
+.sticker-blue:active,
+.tag-gray:active {
+  scale: var(--scale-normal);
+}

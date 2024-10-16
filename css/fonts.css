@@ -1,0 +1,19 @@
+@font-face {
+  font-family: PTSansB;
+  src: url(../fonts/PTSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: PTSansR;
+  src: url(../fonts/PTSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: PTSansI;
+  src: url(../fonts/PTSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: LatoR;
+  src: url(../fonts/Lato-Regular.ttf);
+}

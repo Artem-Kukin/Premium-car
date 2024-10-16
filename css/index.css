@@ -1,0 +1,32 @@
+:root {
+  --color-white: #fff;
+  --color-black: #171717;
+  --color-black-light: #232323;
+  --color-blue: #4a90e2;
+  --color-gray: #2d3436;
+  --color-gray-light: #ebebeb;
+
+  --font-family-b: PTSansB, sans-serif;
+  --font-family-i: PTSansI, sans-serif;
+  --font-family-r: PTSansR, sans-serif;
+  --font-family-lato-r: LatoR, sans-serif;
+
+  --animation-speed: 0.25s;
+  --animation-fanc: ease;
+  --animation: var(--animation-speed) var(--animation-fanc);
+
+  --scale-normal: 1;
+  --scale-active: 1.05;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding-inline: 20px;
+}
