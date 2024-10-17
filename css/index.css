@@ -24,10 +24,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
-  
 }
 
 .container {
@@ -35,3 +34,18 @@ a{
   margin: 0 auto;
   padding-inline: 20px;
 }
+
+.scale-photo {
+  transition: all var(--animation);
+}
+.scale-photo:hover,
+.scale-photo:focus {
+  scale: var(--scale-active);
+  box-shadow: var(--color-black) 7px 7px 7px;
+}
+
+.scale-photo:active {
+  scale: var(--scale-normal);
+  box-shadow: 0 0 0 0;
+}
+
