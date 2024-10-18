@@ -28,6 +28,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+ul {
+  list-style: none;
+}
 
 .container {
   max-width: 1210px;
@@ -40,8 +43,8 @@ a {
 }
 .scale-photo:hover,
 .scale-photo:focus {
-  scale: var(--scale-active);
   box-shadow: var(--color-black) 7px 7px 7px;
+  scale: var(--scale-active);
 }
 
 .scale-photo:active {
