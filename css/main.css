@@ -59,7 +59,7 @@
   
 }
 
-.main__top-inner {
+.main__bottom-inner {
   padding-top: 15px;
   width: 66%;
   display: flex;
@@ -125,6 +125,20 @@
   height: 50%;
   overflow-y: auto;
 }
+
+
+.info-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotateX(180deg);
+  z-index: 2;
+}
+.main__inner-item:hover >  .info-arrow{
+  display: none;
+}
+
+
 
 .main__inner-item:hover > .main__item-description:hover {
   background-color: var(--color-black);
