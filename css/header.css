@@ -40,18 +40,29 @@
   transition: all var(--animation);
 }
 
-.nav-search-icon:hover,
-.nav-search-icon:focus,
-.logo-text:hover,
-.logo-text:focus,
-.header__nav-item:hover,
-.header__nav-item:focus {
-  color: var(--color-blue);
-  scale: var(--scale-active);
+@media (hover: hover) {
+  .nav-search-icon:hover,
+  .nav-search-icon:focus,
+  .logo-text:hover,
+  .logo-text:focus,
+  .header__nav-item:hover,
+  .header__nav-item:focus {
+    color: var(--color-blue);
+    scale: var(--scale-active);
+  }
+
+  .nav-search-icon:active,
+  .logo-text:active,
+  .header__nav-item:active {
+    scale: var(--scale-normal);
+  }
 }
 
-.nav-search-icon:active,
-.logo-text:active,
-.header__nav-item:active {
-  scale: var(--scale-normal);
+@media (hover: none) {
+  .nav-search-icon:active,
+  .logo-text:active,
+  .header__nav-item:active {
+    color: var(--color-blue);
+    scale: var(--scale-active);
+  }
 }

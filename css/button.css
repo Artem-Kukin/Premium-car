@@ -12,12 +12,20 @@
   transition: all var(--animation);
 }
 
-.button-black:hover,
-.button-black:focus {
-  background-color: var(--color-gray);
-  scale: var(--scale-active);
-}
+@media (hover: hover) {
+  .button-black:hover,
+  .button-black:focus {
+    background-color: var(--color-gray);
+    scale: var(--scale-active);
+  }
 
-.button-black:active {
-  scale: var(--scale-normal);
+  .button-black:active {
+    scale: var(--scale-normal);
+  }
+}
+@media (hover: none) {
+  .button-black:active {
+    background-color: var(--color-gray);
+    scale: var(--scale-active);
+  }
 }

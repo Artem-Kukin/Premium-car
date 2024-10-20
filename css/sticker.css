@@ -18,24 +18,39 @@
   color: var(--color-white);
   background-color: var(--color-blue);
 }
-.sticker-blue:hover,
-.sticker-blue:focus {
-  scale: var(--scale-active);
-}
+
 
 .tag-gray {
   color: var(--color-black);
   background-color: var(--color-gray-light);
 }
 
-.tag-gray:hover,
-.tag-gray:focus {
-  color: var(--color-white);
-  background-color: var(--color-gray);
+
+
+@media (hover: hover) {
+  .sticker-blue:hover,
+.sticker-blue:focus {
   scale: var(--scale-active);
 }
-
-.sticker-blue:active,
-.tag-gray:active {
-  scale: var(--scale-normal);
+  .tag-gray:hover,
+  .tag-gray:focus {
+    color: var(--color-white);
+    background-color: var(--color-gray);
+    scale: var(--scale-active);
+  }
+  
+  .sticker-blue:active,
+  .tag-gray:active {
+    scale: var(--scale-normal);
+  }
+}
+@media (hover: none) {
+  .tag-gray:active {
+    color: var(--color-white);
+    background-color: var(--color-gray);
+    scale: var(--scale-active);
+  }
+  .sticker-blue:active {
+  scale: var(--scale-active);
+}
 }
