@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   color: var(--color-white);
   background-color: var(--color-black);
   padding-block: 35px;
@@ -21,16 +22,16 @@
   padding: 3px 5px;
 }
 
-.header__nav {
-  margin-right: 60px;
-}
-
 .header__nav-inner {
   font-family: var(--font-family-r);
   font-size: 14px;
   display: flex;
   align-items: center;
   gap: 0 40px;
+}
+.nav-search {
+  width: 80px;
+  text-align: end;
 }
 
 .nav-search-icon,
@@ -40,7 +41,10 @@
   transition: all var(--animation);
 }
 
+
+
 @media (hover: hover) {
+  
   .nav-search-icon:hover,
   .nav-search-icon:focus,
   .logo-text:hover,

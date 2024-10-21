@@ -8,6 +8,7 @@
 }
 .low-info__inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 30px;
@@ -42,6 +43,7 @@
 .low-info__item {
   padding: 15px;
   border-radius: 5px;
+  flex-basis: 23%;
 }
 
 .low-info__item:hover {
@@ -52,7 +54,8 @@
   background-color: var(--color-blue);
   transform: translateY(15%);
 }
-.low-info > .container:hover .low-info__item:nth-child(n + 3) {
+.low-info > .container:hover .low-info__item:nth-child(4n + 4),
+.low-info > .container:hover .low-info__item:nth-child(4n + 3) {
   background-color: var(--color-blue);
   transform: translateY(-15%);
 }
