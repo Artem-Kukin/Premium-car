@@ -191,10 +191,7 @@
 }
 
 .article__instagram-icon {
-  position: relative;
-  top: 22%;
-  transform: translateY(-50%);
-  right: 5%;
+  transform: translate(-30%, 15%);
 }
 .article__tags {
   grid-area: article__tags;

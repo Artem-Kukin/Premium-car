@@ -456,6 +456,7 @@ input {
     padding: 15px;
     box-shadow: var(--color-black) inset 0 0 45px 45px;
     transition: all var(--animation);
+    z-index: -1;
   }
 
   .main__item-description > .sticker-blue {
@@ -483,7 +484,9 @@ input {
     transition: all var(--animation);
   }
 
-  .main__inner-item:hover > .main__item-description .main__description-text-bottom {
+  .main__inner-item:hover
+    > .main__item-description
+    .main__description-text-bottom {
     transform: translateY(0%);
   }
   .info-arrow {
@@ -491,5 +494,21 @@ input {
   }
   .footer-bottom__nav {
     display: none;
+  }
+  .article__user-card {
+    display: none;
+  }
+
+  .footer-top__inner {
+    flex-direction: column;
+  }
+  .footer-top__form,
+  .footer-top__inner__about {
+    width: auto;
+  }
+
+  .article__title__instagram,
+  .article__grid {
+    position: sticky;
   }
 }
