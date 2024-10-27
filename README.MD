@@ -1,6 +1,6 @@
 # Premium CAR 
 ### В разработке
-![](/images/stop.svg)
+![](/images/readme-banner.png)
 
 ### Посмотреть можно: [*тут!*]( https://artem-kukin.github.io/Premium-car/)
 
